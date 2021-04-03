@@ -54,6 +54,9 @@
     "last 2 versions",
     "not dead"
   ],
+  "devServer": {
+    "disableHostCheck": true
+  },
   "engines": {
     "node": "12.18.2"
   }
