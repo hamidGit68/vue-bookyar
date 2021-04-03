@@ -1,0 +1,191 @@
+
+#nav {
+    padding: 10px;
+    text-align: right;
+    max-height: 155px;
+    background-image: linear-gradient(50deg, var(--secondary) 15%, var(--secondarytrans) 40%, var(--secondarytrans2)),url("../../assets/images/bg-nav.jpg");
+    background-position: top center;
+    background-size: 100% 120%;
+}
+
+.ul-nav {
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#nav a, #nav span {
+    font-weight: bold;
+    color: var(--text4);
+    text-decoration: none;
+    font-size: 28px;
+}
+
+#nav a:hover, #nav span:hover {
+    color: var(--accent2);
+}
+
+#nav a i, #nav span i {
+    display: inline-block;
+}
+
+#nav a.router-link-exact-active, #nav span.router-link-exact-active {
+    color: var(--text3);
+    outline: none;
+}
+
+.style-btn {
+    font-size: 25px;
+    color: var(--text2);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    background-color: var(--text3);
+    border: 2px solid var(--text4);
+}
+
+.style-btn:hover {
+    color: var(--text2);
+    background-color: var(--text4);
+    border: 2px solid var(--text3);
+}
+
+.style-btn:active , .style-btn:focus {
+    color: var(--text2);
+    background-color: var(--text3);
+    border: 2px solid var(--text4);
+}
+
+/* style for dropCompo component */
+#serv2 {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#drop-serv2 {
+    background-image: linear-gradient(50deg, var(--secondary) 15%, var(--secondarytrans) 40%, var(--secondarytrans2));
+}
+
+#serv2 span {
+    text-align: center;
+}
+
+#serv2 a {
+    display: inline-block;
+}
+
+.image-book {
+    background-image: url(../../assets/images/welcome-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 265px;
+    padding-top: 85px;
+    word-spacing: 6px;
+    display: none;
+}
+
+.image-book strong {
+    color: var(--primary1);
+}
+
+@media only screen and (max-width: 840px) {
+    #nav a, #nav span {
+        font-size: 24px;
+    }
+
+    #nav {
+        max-height: 195px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    #nav {
+        max-height: 485px;
+    }
+
+    .image-book {
+        display: block;
+    }
+
+    .style-btn {
+        display: flex;
+    }
+
+    .navIts {
+        display: none;
+        margin-top: 0;
+    }
+    .navIts  a {
+        display: block;
+        text-align: right;
+        width: 100%;
+    }
+
+    .navIts .dropdown-toggle, .navIts .dropdown {
+        display: block;
+        width: 100%;
+    }
+
+    #serv2 > span {
+        text-align: right;
+    }
+
+    #drop-serv2 {
+        position: relative;
+        width: 50%;
+        left: 100%;
+        transform: translateX(-100%);
+    }
+
+    #drop-serv2 a {
+        text-align: center;
+    }
+
+    .logo img {
+        width: 98%;
+        margin: 25% auto 25px;
+    }
+}
+
+@media only screen and (max-width: 495px) {
+    .image-book {
+        padding-top: 95px;
+    }
+    .image-book h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 465px) {
+
+    .style-btn {
+        position: absolute;
+        left: 5%;
+        bottom: 15%;
+        float: none;
+    }
+
+    .row {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 404px) {
+    .logo {
+        width: 25%;
+    }
+
+    .navIts, .image-book {
+        width: 75%;
+    }
+
+    .image-book h2 {
+        font-size: 20px;
+    }
+}
+
+

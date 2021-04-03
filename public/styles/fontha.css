@@ -1,0 +1,30 @@
+@font-face {
+	font-family: Bshiraaaz;
+	src: url(../fonts/persian/BShiraz.ttf);
+	src: url(../fonts/persian/BShiraz.eot);
+	src: url(../fonts/persian/BShiraz.woff);
+}
+
+@font-face {
+	font-family: Narenj;
+	src: url(../fonts/farsi/BNarenj.ttf);
+}
+
+@font-face {
+	font-family: Blotus1;
+	src: url(../fonts/farsi/BLotus-Bold.ttf);
+}
+
+/* font converted using font-converter.net. thank you! */
+@font-face {
+	font-family: "Gabriely-Black";
+	src: url("../fonts/english/Gabriely/GabrielyBlack.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/english/Gabriely/GabrielyBlack.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("../fonts/english/Gabriely/GabrielyBlack.otf") format("opentype"), /* Open Type Font */
+	url("../fonts/english/Gabriely/GabrielyBlack.svg") format("svg"), /* Legacy iOS */
+	url("../fonts/english/Gabriely/GabrielyBlack.ttf") format("truetype"), /* Safari, Android, iOS */
+	url("../fonts/english/Gabriely/GabrielyBlack.woff") format("woff"), /* Modern Browsers */
+	url("../fonts/english/Gabriely/GabrielyBlack.woff2") format("woff2"); /* Modern Browsers */
+	/*font-weight: normal;*/
+	/*font-style: normal;*/
+}

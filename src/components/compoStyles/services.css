@@ -1,0 +1,148 @@
+#parent {
+    background-color: var(--accent1);
+    margin-top: 15px;
+    min-height: 260px;
+    position: relative;
+    margin-bottom: 3px;
+}
+
+.buttonParent {
+    margin: 0 0 3px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonParent button {
+    font-size: 24px;
+    box-shadow: 2px 1px 5px var(--secondarytrans2);
+    padding: 12px 10px;
+    background-color: var(--secondary);
+    transition: 500ms all;
+}
+
+.buttonParent button:hover {
+    background-color: var(--text4);
+    color: var(--secondary);
+}
+
+.buttonParent button:active {
+    background-color: var(--secondarytrans);
+}
+
+#ul-service li {
+    width: 25%;
+    text-align: center;
+    padding: 15px 5px;
+    list-style: none;
+    font-size: 25px;
+    background-color: var(--text4);
+}
+
+#ul-service li:nth-child(2) {
+    margin-right: 25%;
+}
+
+#ul-service li:nth-child(3) {
+    margin-right: 50%;
+}
+
+#ul-service li:nth-child(4) {
+    margin-right: 75%;
+}
+
+.iconParent {
+    position: absolute;
+    right: 10%;
+    bottom: 28%;
+    opacity: 0;
+}
+
+.iconParent:nth-child(2) {
+    right: 33%;
+    bottom: 10%;
+}
+
+.iconParent:nth-child(3) {
+    right: 55%;
+    bottom: 55%;
+}
+
+.iconParent:nth-child(4) {
+    right: 78%;
+    bottom: 37%;
+}
+
+.iconCircle {
+    /*position: absolute;*/
+    text-align: center;
+    line-height: 155px;
+    width: 140px;
+    height: 140px;
+    padding: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    color: var(--text4);
+    font-size: 68px;
+}
+
+/* transitions with active-li class for li  */
+.active-li {
+    animation-name: backAnim;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    /*animation-iteration-count: infinite;*/
+}
+
+.iconLi {
+    animation-name: iconAnim;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+}
+
+@keyframes backAnim {
+    0% {
+        background-color: rgba(229, 109, 138, .1);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    25% {
+        background-color: rgba(229, 109, 138, .5);
+        color: rgba(255, 255, 255, .9);
+    }
+
+    50% {
+        background-color: rgba(229, 109, 138, 1);
+        color: rgba(255, 255, 255, .8);
+    }
+
+    75% {
+        background-color: rgba(229, 109, 138, .5);
+        color: rgba(255, 255, 255, .9);
+    }
+
+    100% {
+        background-color: rgba(229, 109, 138, .1);
+        color: rgba(255, 255, 255, 1);
+    }
+} /* end of "backAnim" animation */
+
+@keyframes iconAnim {
+    0% {
+        opacity: 0;
+        transform: scale(1,1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.4,1.4);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1,1);
+    }
+}

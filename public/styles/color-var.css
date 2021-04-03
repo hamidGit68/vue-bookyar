@@ -1,0 +1,16 @@
+:root {
+    --text1: #938587; /* rgb(147, 133, 135) */
+    --text2: #5A5556; /* rgb(90, 85, 86) */
+    --text3: #DFE31A;  /* rgb(223, 227, 26) */
+    --text4: #ffffff;
+    --decorative: rgba(246,229,195, 1);
+    --accent1: #BBC956;  /* rgb(187, 201, 86) */
+    --accent2: rgba(238,231,200,1);
+    --primary1: #A02C3D;  /* rgb(160, 44, 61) */
+    --primarytrans: rgba(160, 44, 61, .8);
+    --primarytrans2: rgba(160, 44, 61, .4);
+    --primaSe: #E56D8A;  /* rgb(229, 109, 138) */
+    --secondary: rgba(213, 104, 75, 1);
+    --secondarytrans: rgba(213, 104, 75, .5);
+    --secondarytrans2: rgba(213, 104, 75, .7);
+}

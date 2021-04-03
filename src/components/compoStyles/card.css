@@ -1,0 +1,102 @@
+#card-par {
+    min-height: 500px;
+}
+
+
+/* panel styles */
+.panel-default .panel-heading {
+    font-size: 30px;
+    color: var(--text2);
+    font-family: Bshiraaaz;
+    background-color: var(--text4);
+    border-right: 2px solid var(--primary1);
+    border-left: 2px solid var(--primary1);
+}
+
+.panel-body {
+    border-right: 2px solid var(--primary1);
+    border-left: 2px solid var(--primary1);
+}
+
+.panel-body p {
+    font-size: 18px;
+}
+
+.panel-body strong {
+    color: var(--primary1);
+    margin-right: 15%;
+}
+
+[id^="card-pa"] section {
+    height: 400px;
+    background-color: #47800c;
+    position: relative;
+    overflow: hidden;
+}
+
+[id^="card-pa"] section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.transDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px;
+    font-size: 18px;
+    width: 100%;
+    min-height: 25%;
+    background-color: var(--primary1);
+    color: var(--text4);
+    pointer-events: none;
+}
+
+.panel div[dir=ltr] {
+    font-family: "Gabriely-Black";
+    font-size: 15px;
+}
+
+.panel-footer {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 2px solid var(--primary1);
+    border-left: 2px solid var(--primary1);
+}
+
+.shop {
+    cursor: pointer;
+}
+
+
+.shop i:hover {
+    color: var(--primarytrans2);
+    font-size: 23px;
+}
+
+/* vue animations */
+.animTitle-enter-active {
+    animation: animTitle-in 2s;
+}
+.animTitle-leave-active {
+    animation: animTitle-in 2s reverse;
+}
+@keyframes animTitle-in {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: .5;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

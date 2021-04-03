@@ -1,0 +1,51 @@
+
+
+.par-title {
+    margin-top: 35px;
+}
+
+.par-title > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flesh {
+    min-height: 60px;
+    /*background-color: #71101f;*/
+}
+
+.dispFlex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.satr .dayereh {
+    width: 8px;
+    height: 8px;
+    margin-bottom: 2px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: var(--primary1);
+}
+
+/*.satr2 {*/
+/*    margin-top: 6px;*/
+/*}*/
+
+/*.satr3 {*/
+/*    margin-top: 12px;*/
+/*}*/
+
+
+/*.css({*/
+/*    width: "8px",*/
+/*    height: "8px",*/
+/*"margin-bottom": "2px",*/
+/*"-webkit-border-radius": "50%",*/
+/*"-moz-border-radius": "50%",*/
+/*"border-radius": "50%",*/
+/*"background-color": "rgba(160, 44, 61, 1)"*/
+/*})*/

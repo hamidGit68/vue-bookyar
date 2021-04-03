@@ -1,0 +1,95 @@
+#guide {
+    margin-top: 25px;
+    /*border: 1px solid #000;*/
+    position: relative;
+}
+
+.parentAll {
+    box-shadow: 1px 1px 7px var(--primary1);
+    /*padding: 7px 15px;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.parentAll h1 {
+    color: var(--primary1);
+    font-size: 60px;
+    font-family: Narenj, serif;
+}
+
+.parentAll a {
+    cursor: pointer;
+    font-family: Bshiraaaz, serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--primaSe);
+}
+
+.parentAll a:hover {
+    color: var(--primary1);
+}
+
+.parentAll a:active {
+    color: var(--primarytrans);
+}
+
+.divPar {
+    background-color: var(--decorative);
+    cursor: pointer;
+    /*height: 500px;*/
+    border-bottom: 1px solid var(--text2);
+    transform:
+            perspective(2000px)
+            translate3d(0px, -66px, 198px)
+            rotateX(-55deg)
+            scale3d(0.86, 0.75, 1)
+            translateY(50px);
+    border-radius: 5px;
+    will-change: transform;
+    transition: 0.4s ease-in-out all;
+}
+
+.divPar:hover {
+     transform: scale3d(1, 1, 1);
+    background-image: linear-gradient(150deg, var(--primary1), var(--decorative) 20%, var(--decorative) 80%, var(--primary1));
+ }
+
+.divPar p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+.title {
+    text-align: center;
+    font-size: 22px;
+    color: var(--primary1);
+    text-shadow: 1px -1px 3px var(--primarytrans), 1px -1px 5px var(--text3);
+}
+
+#sokhan {
+    box-shadow: 1px 1px 7px var(--primary1);
+    position: absolute;
+    bottom: -20px;
+    left: 28%;
+    right: 28%;
+    z-index: -2;
+    height: 220px;
+}
+
+.pands p {
+    font-size: 23px;
+    padding: 6px;
+    text-align: justify;
+}
+
+.pands img {
+    height: 140px;
+}
+
+.pands span {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+}

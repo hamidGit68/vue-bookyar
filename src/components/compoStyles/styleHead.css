@@ -1,0 +1,13 @@
+.bgcolor-head {
+    background-image: linear-gradient(210deg, var(--primarytrans), var(--primarytrans2)),url("../../assets/images/bg-head.jpg");
+    background-position: center center;
+}
+
+.onvan {
+    min-height: 270px;
+    text-align: center;
+    line-height: 250px;
+    font-size: 192px;
+    font-family: Narenj;
+    color: var(--text3);
+}
