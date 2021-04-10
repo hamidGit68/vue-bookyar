@@ -8,6 +8,7 @@ import router from "./router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/src/jquery.js";
 import "bootstrap/dist/js/bootstrap.min.js";
+import "animate.css";
 
 /* this is the way that we add our own "js files" */
 import "@/my-scripts/homeScript.js";

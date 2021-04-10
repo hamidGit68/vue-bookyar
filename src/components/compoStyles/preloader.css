@@ -1,0 +1,111 @@
+#preload {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.loadedTrue {
+    display: none;
+}
+
+.contain {
+    background-color: var(--accent1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.parent {
+    perspective: 800px;
+    perspective-origin: bottom center;
+    position: relative;
+    width: 192px;
+    height: 236px;
+    background-image: url(../../assets/images/page-book2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.book-child {
+    width: 192px;
+    height: 85%;
+    background-color: #a02c3d;
+    position: relative;
+    transform: rotateY(-80deg);
+    transform-origin: left center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation-name: page1;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.book-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 9px solid rgba(250,76,36,.8);
+}
+
+.parent::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 9px solid rgba(250,76,36,.8);
+    border-bottom-left-radius: 20px;
+    /*	z-index: 2;*/
+}
+
+@keyframes page1 {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    25% {
+        transform: rotateY(-20deg);
+    }
+
+    50% {
+        transform: rotateY(-40deg);
+    }
+
+    75% {
+        transform: rotateY(-60deg);
+    }
+
+    100% {
+        transform: rotateY(-80deg);
+    }
+}
+
+.parent h2 {
+    font-family: Blotus1;
+    font-size: 28px;
+    color: #5A5556;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+/* in this part we changed the class of "animate.css" to have an infinite animation */
+.animate__rotateIn {
+    animation-iteration-count: infinite;
+}
+
+
