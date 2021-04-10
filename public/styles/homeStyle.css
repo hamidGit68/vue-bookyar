@@ -32,12 +32,12 @@
 }
 
 #register {
-    align-self: self-start;
+    align-self: flex-start;
     margin-right: 2%;
 }
 
 #login {
-    align-self: self-end;
+    align-self: flex-end;
     margin-left: 2%;
 }
 

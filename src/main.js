@@ -11,7 +11,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "animate.css";
 
 /* this is the way that we add our own "js files" */
-import "@/my-scripts/homeScript.js";
+// import "@/my-scripts/homeScript.js";
 // import "@/my-scripts/database.js";
 // import "@/my-scripts/sliderCode.js";
 // import VueRouter from "vue-router/types/router";

@@ -6,7 +6,7 @@
           <div class="col-md-12">
             <div class="intro-part">
               <div id="register">
-                <button class="btn btn-default btn-def">
+                <button @mouseover="btnEffect" class="btn btn-default btn-def">
                   ثبت نام در سایت
                 </button>
                 <span class="glyphicon glyphicon-arrow-right"></span>
@@ -21,7 +21,7 @@
               </p>
               <div id="login">
                 <span class="glyphicon glyphicon-arrow-left"></span>
-                <button class="btn btn-default btn-def">
+                <button @mouseover="btnEffect" class="btn btn-default btn-def">
                   ورود به سایت
                 </button>
               </div>
@@ -58,13 +58,37 @@ export default {
     servicCompo,
     siteGuide,
     footerBook
+  },
+  methods: {
+    btnEffect: function (event) {
+      let vueInc = this;
+      let btnMouse = event.target;
+      if ($(btnMouse).parent().attr("id") === "login") {
+        console.log("login");
+        vueInc.animSpan($(btnMouse), "-", "+");
+      } else {
+        console.log("register");
+        vueInc.animSpan($(btnMouse), "+", "-");
+      }
+    },
+
+    animSpan: function (elem, signs, signsDif) {
+      elem
+              .parent()
+              .children("span")
+              .show(1000)
+              .animate(
+                      {
+                        left: signs + "=10px"
+                      },
+                      1000,
+                      function() {
+                        $(this).css("left", signsDif + "=10px");
+                      }
+              );
+    }
+
   }
-  // mounted() {
-  //   let myscript = document.createElement("script");
-  //   myscript.setAttribute("src", "../src/my-scripts/homeScript.js");
-  //   myscript.setAttribute("type", "text/javascript");
-  //   document.head.appendChild(myscript);
-  // }
 };
 </script>
 

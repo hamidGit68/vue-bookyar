@@ -1,5 +1,5 @@
 <template>
-    <section id="preload">
+    <section id="preload" v-if="!hiden">
       <div class="contain">
         <div class="parent">
             <h2 class="animate__animated
@@ -15,11 +15,26 @@
 <script>
     export default {
         name: "preloader",
+        data() {
+            return {
+                hiden: false
+            }
+        },
         methods: {
             displayOff: function () {
+                let vueInc = this;
                 document.onreadystatechange = function () {
                     if(document.readyState === "complete") {
-                        $("#preload").fadeOut(1500);
+                        setTimeout(function () {
+                            vueInc.hiden = true;
+                            /* $parent makes it possible to access to the parent data */
+                            vueInc.$parent.showCont = true;
+                        }, 5000);
+
+                        // $("#preload").fadeOut(5000, function () {
+                        //     // vueInc.loadShow = true;
+                        //     // vueInc.$parent.showCont = true;
+                        // });
                     }
                 }
             }
